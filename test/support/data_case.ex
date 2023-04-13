@@ -1,4 +1,4 @@
-defmodule PetalBoilerplate.DataCase do
+defmodule DAOSystemBasedOnGithub.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -10,7 +10,7 @@ defmodule PetalBoilerplate.DataCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use PetalBoilerplate.DataCase, async: true`, although
+  by setting `use DAOSystemBasedOnGithub.DataCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -18,17 +18,17 @@ defmodule PetalBoilerplate.DataCase do
 
   using do
     quote do
-      alias PetalBoilerplate.Repo
+      alias DAOSystemBasedOnGithub.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import PetalBoilerplate.DataCase
+      import DAOSystemBasedOnGithub.DataCase
     end
   end
 
   setup tags do
-    PetalBoilerplate.DataCase.setup_sandbox(tags)
+    DAOSystemBasedOnGithub.DataCase.setup_sandbox(tags)
     :ok
   end
 
@@ -36,7 +36,7 @@ defmodule PetalBoilerplate.DataCase do
   Sets up the sandbox based on the test tags.
   """
   def setup_sandbox(tags) do
-    pid = Ecto.Adapters.SQL.Sandbox.start_owner!(PetalBoilerplate.Repo, shared: not tags[:async])
+    pid = Ecto.Adapters.SQL.Sandbox.start_owner!(DAOSystemBasedOnGithub.Repo, shared: not tags[:async])
     on_exit(fn -> Ecto.Adapters.SQL.Sandbox.stop_owner(pid) end)
   end
 

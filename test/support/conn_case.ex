@@ -1,4 +1,4 @@
-defmodule PetalBoilerplateWeb.ConnCase do
+defmodule DAOSystemBasedOnGithubWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -11,7 +11,7 @@ defmodule PetalBoilerplateWeb.ConnCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use PetalBoilerplateWeb.ConnCase, async: true`, although
+  by setting `use DAOSystemBasedOnGithubWeb.ConnCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -20,19 +20,19 @@ defmodule PetalBoilerplateWeb.ConnCase do
   using do
     quote do
       # The default endpoint for testing
-      @endpoint PetalBoilerplateWeb.Endpoint
+      @endpoint DAOSystemBasedOnGithubWeb.Endpoint
 
-      use PetalBoilerplateWeb, :verified_routes
+      use DAOSystemBasedOnGithubWeb, :verified_routes
 
       # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest
-      import PetalBoilerplateWeb.ConnCase
+      import DAOSystemBasedOnGithubWeb.ConnCase
     end
   end
 
   setup tags do
-    PetalBoilerplate.DataCase.setup_sandbox(tags)
+    DAOSystemBasedOnGithub.DataCase.setup_sandbox(tags)
     {:ok, conn: Phoenix.ConnTest.build_conn()}
   end
 end
