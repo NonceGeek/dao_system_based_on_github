@@ -4,16 +4,19 @@
 @import "tailwindcss/utilities";
 
 @layer base {
-  /* Add base styles here (eg. styles that are the defaults for common elements)
-
-    Example base style:
-    h1 {
-      @apply text-2xl;
-    }
-
-  */
+  h1 {
+    @apply text-6xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply font-bold;
+  }
 }
-
 @layer components {
   /* Add component styles here (eg. buttons or tabs or anything that uses a number of styles)
 

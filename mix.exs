@@ -52,7 +52,13 @@ defmodule DAOSystemBasedOnGithub.MixProject do
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
       {:petal_components, "~> 1.0.0"},
-      {:rename_project, "~> 0.1.0", only: :dev}
+      {:rename_project, "~> 0.1.0", only: :dev},
+
+      # Markdown
+      {:earmark, ">= 0.0.0"},
+
+      # Github
+      {:tentacat, "~> 2.0"}
     ]
   end
 

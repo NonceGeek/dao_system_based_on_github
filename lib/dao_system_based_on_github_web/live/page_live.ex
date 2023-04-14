@@ -35,7 +35,9 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
     <.container class="mt-10 mb-32">
       <div class="grid gap-5 mt-5 md:grid-cols-2 lg:grid-cols-3">
         <.card>
-          <.card_media src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" />
+          <center>
+            <.card_media src={~p"/images/logo_readme.png"} style="width: 50%"/>
+          </center>
 
           <.card_content category="Profile" heading="Web3 Readme Generator">
             Generate Web3 Readme.md for User, Repo & Organization.
@@ -54,16 +56,21 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
         </.card>
 
         <.card>
-          <.card_media src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" />
-
+          <center>
+            <.card_media src={~p"/images/logo_airdropper.png"} style="width: 50%"/>
+          </center>
           <.card_content category="Economic" heading="Airdropper based on Github">
             Airdrop coins & NFTs for the contributors of Repos / Organiazations.
           </.card_content>
 
           <.card_footer>
-            <.button to="/" label="View">
-              <Heroicons.eye solid class="w-4 h-4 mr-2" />Move Version
-            </.button>
+            <a
+            target="_blank"
+            href="https://airdropper.movedid.build/">
+              <.button to="/" label="View">
+                <Heroicons.eye solid class="w-4 h-4 mr-2" />Move Version
+              </.button>
+            </a>
             <.button to="/" label="View">
               <Heroicons.eye solid class="w-4 h-4 mr-2" />Ethereum Version
             </.button>
@@ -72,7 +79,7 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
 
         <.card>
           <center>
-            <.card_media src={~p"/images/move-did.png"} />
+            <.card_media src={~p"/images/logo_did.png"} style="width: 50%"/>
           </center>
 
           <.card_content category="DID" heading="MoveDID">
@@ -80,9 +87,13 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
           </.card_content>
 
           <.card_footer>
+            <a
+              target="_blank"
+              href="https://movedid.build/">
             <.button to="/" label="View">
               <Heroicons.eye solid class="w-4 h-4 mr-2" />MoveDID Mangager
             </.button>
+            </a>
           </.card_footer>
         </.card>
       </div>
