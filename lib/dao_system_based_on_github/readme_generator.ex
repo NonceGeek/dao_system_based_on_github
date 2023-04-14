@@ -11,7 +11,8 @@ defmodule DAOSystemBasedOnGithub.ReadmeGenerator do
     "blue",
   ]
 
-  @client Tentacat.Client.new(%{access_token: Constants.get_github_token()})
+  @client Tentacat.Client.new()
+  # @client Tentacat.Client.new(%{access_token: Constants.get_github_token()})
   def generate(params) do
     daos_handled =
       params.daos_joined_in

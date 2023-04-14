@@ -1,6 +1,7 @@
 defmodule DAOSystemBasedOnGithubWeb.ReadmeGeneratorLive do
   use DAOSystemBasedOnGithubWeb, :live_view
   alias DAOSystemBasedOnGithub.ReadmeGenerator
+
   @impl true
   def mount(_params, _session, socket) do
     {:ok,
