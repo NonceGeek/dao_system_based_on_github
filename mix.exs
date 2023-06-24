@@ -58,7 +58,12 @@ defmodule DAOSystemBasedOnGithub.MixProject do
       {:earmark, ">= 0.0.0"},
 
       # Github
-      {:tentacat, "~> 2.0"}
+      {:tentacat, "~> 2.0"},
+
+      # Aptos
+      {:web3_aptos_ex, "~> 1.1.4"},
+
+      {:ecto, "~> 3.7", override: true},
     ]
   end
 

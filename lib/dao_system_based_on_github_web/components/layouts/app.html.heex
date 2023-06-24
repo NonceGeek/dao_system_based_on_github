@@ -53,6 +53,45 @@
           </svg>
         </a>
       </div>
+      <div class="flex justify-end gap-3 pr-4">
+        <!--TODO: SET IT TO LEFT -->
+          <a
+            class="inline-flex items-center gap-2 p-2 text-gray-500 rounded dark:text-gray-400 dark:hover:text-gray-500 hover:text-gray-400 group"
+            href="/"
+          >
+            <span class="hidden font-semibold sm:block">
+              Homepage
+            </span>
+          </a>
+
+          <a
+            class="inline-flex items-center gap-2 p-2 text-gray-500 rounded dark:text-gray-400 dark:hover:text-gray-500 hover:text-gray-400 group"
+            href="/data_panel"
+          >
+            <span class="hidden font-semibold sm:block">
+              Data Panel
+            </span>
+          </a>
+
+          <a
+            class="inline-flex items-center gap-2 p-2 text-gray-500 rounded dark:text-gray-400 dark:hover:text-gray-500 hover:text-gray-400 group"
+            href="/"
+          >
+            <span class="hidden font-semibold sm:block">
+              Github Linker
+            </span>
+          </a>
+
+          <a
+            class="inline-flex items-center gap-2 p-2 text-gray-500 rounded dark:text-gray-400 dark:hover:text-gray-500 hover:text-gray-400 group"
+            href="/"
+          >
+            <span class="hidden font-semibold sm:block">
+              Readme Generator
+            </span>
+          </a>
+      </div>
+
 
       <div class="flex justify-end gap-3 pr-4">
         <a
@@ -93,11 +132,19 @@
         <.color_scheme_switch />
       </div>
     </nav>
-
-    <.container class="mt-10">
-      <center><.h1>DAO Plugins based on Github</.h1></center>
-    </.container>
-
     <%= @inner_content %>
+    <!-- 
+    <left>
+      <p>
+        2023 NonceGeekDAO. ALL RIGHTS RESERVED.
+      </p>
+    </left>
+
+    <right>
+        Email: <a href="mailto:leeduckgo@gmail.com">leeduckgo@gmail.com</a>
+        <br>
+        Telegram: @leeduckgo
+    </right>
+    TODO: footprint -->
   </div>
 </main>
