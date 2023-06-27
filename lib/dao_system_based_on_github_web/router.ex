@@ -20,6 +20,7 @@ defmodule DAOSystemBasedOnGithubWeb.Router do
     live "/", PageLive, :index
     live "/readme_generator", ReadmeGeneratorLive, :index
     live "/data_panel", DataPanelLive, :index
+    live "/github_linker", GithubLinkerLive, :index
     get "/test", PageController, :home
     live "/live/modal/:size", PageLive, :modal
     live "/live/slide_over/:origin", PageLive, :slide_over

@@ -1,4 +1,4 @@
-defmodule DAOSystemBasedOnGithubWeb.App do
+defmodule DAOSystemBasedOnGithub.App do
     alias __MODULE__, as: App
     alias DAOSystemBasedOnGithub.ProjectAnalyzer
 

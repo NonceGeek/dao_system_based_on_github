@@ -67,7 +67,7 @@ defmodule DAOSystemBasedOnGithubWeb.DataPanelLive do
     ~H"""
     <.container class="mt-10 mb-32">
       <center><.h1 underline label="Data Panel"/></center>
-      <center><.h5>Hello World</.h5></center>
+      <center><.h5>The Data Panel is used to present the information of each program, including three items: <br>on-chain user information, off-chain user information, and developer information.</.h5></center>
       <br>
       <center><.h2 label="Stage - Beta" /></center>
 
@@ -80,32 +80,44 @@ defmodule DAOSystemBasedOnGithubWeb.DataPanelLive do
         </center>
         <.card_content category="Identity" heading="MoveDID">
           Using MoveDID to aggregate your addresses and services.
-        </.card_content>
-
-        <.card_footer>
-          <.badge color="primary" label="released - beta" />
-          <.card_content>
-          <center> --- Onchain User Data --- </center>
-          <center> --- Developer Data --- </center>
-          </.card_content>
           <br><br>
-          <a
-            target="_blank"
-            href="https://movedid.build/">
-          <.button to="/" label="View">
-            Homepage
-          </.button>
-          </a>
-
-          <a
-            target="_blank"
-            href="https://manager.movedid.build/">
-          <.button to="/" label="View">
-            MoveDID Mangager
-          </.button>
-          </a>
-        </.card_footer>
+          <.badge color="primary" label="released - beta" />
+          <br><br>
+          <center> --- Onchain User Data --- </center>
+          <b>NUM: </b> 
+          <br>
+          <b>DESCRIPTION: </b> This metric is the number of users who signed up for MoveDID.
+          <center> --- Developer Data --- </center>
+          <b>DEVELOPERS: </b>
+          <br>
+          <b>BOUNTIES: </b>
+          <br>
+          <b>PRIZES: </b> <a href="https://dorahacks.io/zh/aptos/2/top" target="_blank" style="color:blue"> Dorahacks Aptos Grant R1 </a>
+        </.card_content>
       </.card>
+
+      <!-- Airdropper -->
+      <.card>
+        <center>
+          <.card_media src={~p"/images/logo_airdropper.png"} style="width: 50%"/>
+        </center>
+        <.card_content category="Economic" heading="Airdropper based on Github">
+          Airdrop coins & NFTs for the contributors of Repos / Organiazations.
+          <br><br>
+          <.badge color="primary" label="released - beta" />
+          <br><br>
+          <center> --- Onchain User Data --- </center>
+          <b>NUM: </b> 
+          <br>
+          <b>DESCRIPTION: </b> This metric is the number of airdrops performed using Airdropper.
+          <center> --- Developer Data --- </center>
+          <b>DEVELOPERS: </b>
+          <br>
+          <b>PRIZES: </b>
+          <br>
+          </.card_content>
+      </.card>  
+
       </div>
       </.container>
     """

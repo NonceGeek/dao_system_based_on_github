@@ -1,6 +1,6 @@
 defmodule DAOSystemBasedOnGithub.ProjectAnalyzer do
     alias Web3AptosEx.Aptos
-    alias DAOSystemBasedOnGithubWeb.App
+    alias DAOSystemBasedOnGithub.App
 
     # +--------------------+
     # | On-Chain User Data |

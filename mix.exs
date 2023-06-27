@@ -64,6 +64,7 @@ defmodule DAOSystemBasedOnGithub.MixProject do
       {:web3_aptos_ex, "~> 1.1.4"},
 
       {:ecto, "~> 3.7", override: true},
+      {:graphvix, "~> 1.1.0", git: "https://github.com/leeduckgo/graphvix.git", branch: "main"},
     ]
   end
 

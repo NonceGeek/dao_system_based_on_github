@@ -66,7 +66,7 @@ defmodule DAOSystemBasedOnGithubWeb.ReadmeGeneratorLive do
   def render(assigns) do
     ~H"""
     <.container class="mt-10 mb-32">
-      <center><.h1 label="README Generator" /></center>
+      <center><.h1 label="README Generator(Developing)" /></center>
       <.form for={@form} phx-change="change" phx-submit="generate">
 
         <.h5 label="Your Name" />
