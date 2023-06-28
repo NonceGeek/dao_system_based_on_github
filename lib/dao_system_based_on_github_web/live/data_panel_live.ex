@@ -1,60 +1,23 @@
 defmodule DAOSystemBasedOnGithubWeb.DataPanelLive do
   use DAOSystemBasedOnGithubWeb, :live_view
-  alias DAOSystemBasedOnGithub.ReadmeGenerator
+  alias DAOSystemBasedOnGithub.{App, ProjectAnalyzer}
 
   @impl true
   def mount(_params, _session, socket) do
+    movedid= 
     {:ok,
      assign(
       socket,
       modal: false,
       form: to_form(%{}, as: :f),
-      name: "",
-      description: "",
-      eth_addr: "",
-      aptos_addr: "",
-      five_awesome_repos: "",
-      daos_joined_in: "",
-      articles: ""
+      movedid_user_num: 12,
+      airdropper_tx_data: 55,
      )}
   end
 
   @impl true
   def handle_params(params, _uri, socket) do
     {:noreply, socket}
-  end
-
-  @impl true
-  def handle_event("generate", %{"f" => form_params}, socket) do
-    readme_raw =
-    form_params
-    |> ExStructTranslator.to_atom_struct()
-    |> ReadmeGenerator.generate()
-    {
-      :noreply,
-      assign(
-        socket,
-        readme_raw: readme_raw
-      )
-
-    }
-  end
-
-  @impl true
-  def handle_event("change", %{"f" => params}, socket) do
-    params_atomed =
-      ExStructTranslator.to_atom_struct(params)
-    {
-      :noreply,
-      socket
-      |> assign(name: params_atomed.name)
-      |> assign(description: params_atomed.description)
-      |> assign(eth_addr: params_atomed.eth_addr)
-      |> assign(aptos_addr: params_atomed.aptos_addr)
-      |> assign(five_awesome_repos: params_atomed.five_awesome_repos)
-      |> assign(daos_joined_in: params_atomed.daos_joined_in)
-      |> assign(articles: params_atomed.articles)
-    }
   end
 
   @impl true
@@ -84,15 +47,23 @@ defmodule DAOSystemBasedOnGithubWeb.DataPanelLive do
           <.badge color="primary" label="released - beta" />
           <br><br>
           <center> --- Onchain User Data --- </center>
-          <b>NUM: </b> 
+          <b>NUM: <a href="" target="_blank" style="color:blue"><%= @movedid_user_num %> </a></b> 
           <br>
           <b>DESCRIPTION: </b> This metric is the number of users who signed up for MoveDID.
           <center> --- Developer Data --- </center>
           <b>DEVELOPERS: </b>
+            <a href="https://github.com/leeduckgo" target="_blank" style="color:blue">leeduckgo</a>
+            <a href="https://github.com/99Kies" target="_blank" style="color:blue">99Kies</a>
+            <a href="https://github.com/xingxinglian" target="_blank" style="color:blue">xingxinglian</a>
+            <a href="https://github.com/qpb8023" target="_blank" style="color:blue">qpb8023</a>
+            <a href="https://github.com/yekai1003" target="_blank" style="color:blue">yekai1003</a>
+            <a href="https://github.com/hqwangningbo" target="_blank" style="color:blue">hqwangningbo</a>
+            <a href="https://github.com/lingxiyang" target="_blank" style="color:blue">lingxiyang</a>
+
           <br>
-          <b>BOUNTIES: </b>
+          <b>GRANTS: Aptos Official Grant R1</b>
           <br>
-          <b>PRIZES: </b> <a href="https://dorahacks.io/zh/aptos/2/top" target="_blank" style="color:blue"> Dorahacks Aptos Grant R1 </a>
+          <b>PRIZES: </b> <a href="https://dorahacks.io/zh/aptos/1/top" target="_blank" style="color:blue"> Dorahacks Aptos Grant R1 </a>
         </.card_content>
       </.card>
 
@@ -107,13 +78,18 @@ defmodule DAOSystemBasedOnGithubWeb.DataPanelLive do
           <.badge color="primary" label="released - beta" />
           <br><br>
           <center> --- Onchain User Data --- </center>
-          <b>NUM: </b> 
+          <b>NUM:  <a href="" target="_blank" style="color:blue"><%= @airdropper_tx_data %> </a></b> 
           <br>
           <b>DESCRIPTION: </b> This metric is the number of airdrops performed using Airdropper.
           <center> --- Developer Data --- </center>
           <b>DEVELOPERS: </b>
+            <a href="https://github.com/leeduckgo" target="_blank" style="color:blue">leeduckgo</a>
+            <a href="https://github.com/ETH-KT" target="_blank" style="color:blue">ETH-KT</a>
+            <a href="https://github.com/qwang98" target="_blank" style="color:blue">qwang98</a>
+            <a href="https://github.com/web3olalala" target="_blank" style="color:blue">web3olalala</a>
+            <a href="https://github.com/zven21" target="_blank" style="color:blue">zven21</a>
           <br>
-          <b>PRIZES: </b>
+          <b>PRIZES: </b> <a href="https://dorahacks.io/zh/aptos/round-2/top" target="_blank" style="color:blue"> Dorahacks Aptos Grant R2 </a>
           <br>
           </.card_content>
       </.card>  

@@ -38,7 +38,9 @@ defmodule DAOSystemBasedOnGithub.ProjectAnalyzer do
             field, 
             [limit: 1]
         )
-        seq_num
+        link = 
+            Aptos.build_event_path(client(), contract_addr, event_handle, field)
+        %{num: seq_num, link: link}
     end
 
     # +---------------------+

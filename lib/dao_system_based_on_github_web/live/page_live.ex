@@ -100,7 +100,7 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
 
           <.card>
             <center>
-              <.card_media src={~p"/images/logo_did.png"} style="width: 50%"/>
+              <.card_media src={~p"/images/logo_crowdfunder.png"} style="width: 50%"/>
             </center>
 
             <.card_content category="Economic" heading="Crowdfunder based on Github">
@@ -113,7 +113,7 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
               <.badge color="secondary" label="aptos" />
               <.badge color="secondary" label="ethereum" />
               <br><br>
-              <.button to="/" color="secondary" label="Secondary">
+              <.button to="https://github.com/NonceGeek/Move-Crowdfunder" color="secondary" label="Secondary">
                   Github Repo
               </.button>
             </.card_footer>
@@ -124,7 +124,7 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
 
           <.card>
             <center>
-              <.card_media src={~p"/images/logo_did.png"} style="width: 50%"/>
+              <.card_media src={~p"/images/logo_github_linker.png"} style="width: 50%"/>
             </center>
 
             <.card_content category="Economic, Social" heading="Github Linker">
@@ -148,7 +148,7 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
 
           <.card>
             <center>
-              <.card_media src={~p"/images/logo_did.png"} style="width: 50%"/>
+              <.card_media src={~p"/images/logo_ai_self_studier.png"} style="width: 50%"/>
             </center>
 
             <.card_content category="Growth" heading="AI-based Studying Copilot">
@@ -159,7 +159,7 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
               <.badge color="success" label="developing" />
               <.badge color="secondary" label="AI" />
               <br><br>
-              <.button to="/" color="secondary" label="Secondary">
+              <.button to="https://github.com/NonceGeek/chat-programming" color="secondary" label="Secondary">
                 Github Repo
               </.button>
             </.card_footer>
@@ -167,7 +167,7 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
 
           <.card>
           <center>
-            <.card_media src={~p"/images/logo_did.png"} style="width: 50%"/>
+            <.card_media src={~p"/images/logo_ai_self_teacher.png"} style="width: 50%"/>
           </center>
 
           <.card_content category="Growth" heading="AI-based Teaching Copilot">
@@ -178,7 +178,7 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
             <.badge color="success" label="developing" />
             <.badge color="secondary" label="AI" />
             <br><br>
-            <.button to="/" color="secondary" label="Secondary">
+            <.button to="https://github.com/NonceGeek/chat-programming" color="secondary" label="Secondary">
               Github Repo
             </.button>
           </.card_footer>
