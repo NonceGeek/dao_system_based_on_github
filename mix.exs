@@ -61,7 +61,7 @@ defmodule DAOSystemBasedOnGithub.MixProject do
       {:tentacat, "~> 2.0"},
 
       # Aptos
-      {:web3_aptos_ex, "~> 1.1.4"},
+      {:web3_aptos_ex, "~> 1.1.6"},
 
       {:ecto, "~> 3.7", override: true},
       {:graphvix, "~> 1.1.0", git: "https://github.com/leeduckgo/graphvix.git", branch: "main"},

@@ -38,7 +38,7 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
       </.container>
 
       <.container class="mt-10 mb-32">
-        <center><.h1>DAO Plugin System based on Github</.h1>
+        <center><.h1>DAO Plugin System based on Github and Aptos</.h1>
         <br>
         <.h1>-[MoveDID Network]-</.h1>
         <br>
@@ -152,13 +152,20 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
             </center>
 
             <.card_content category="Growth" heading="AI-based Studying Copilot">
-              Link Repos, Organizations and Users in Github.
+              Learning and teaching everything assisted by AI.
             </.card_content>
 
             <.card_footer>
               <.badge color="success" label="developing" />
               <.badge color="secondary" label="AI" />
               <br><br>
+              <a
+              target="_blank"
+              href="https://ai.movedid.build/">
+                <.button to="/" label="View">
+                  Launch App
+                </.button>
+              </a>
               <.button to="https://github.com/NonceGeek/chat-programming" color="secondary" label="Secondary">
                 Github Repo
               </.button>
@@ -170,15 +177,22 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
             <.card_media src={~p"/images/logo_ai_self_teacher.png"} style="width: 50%"/>
           </center>
 
-          <.card_content category="Growth" heading="AI-based Teaching Copilot">
-            Link Repos, Organizations and Users in Github.
+          <.card_content category="Growth" heading="Scaffold Aptos based on AI">
+            Smart Contract and dApp Copilot by LLM and Vector Datasets.
           </.card_content>
 
           <.card_footer>
             <.badge color="success" label="developing" />
             <.badge color="secondary" label="AI" />
             <br><br>
-            <.button to="https://github.com/NonceGeek/chat-programming" color="secondary" label="Secondary">
+            <a
+            target="_blank"
+            href="https://scaffold-move.movedid.build/">
+              <.button to="/" label="View">
+                Launch App
+              </.button>
+            </a>
+            <.button to="https://github.com/NonceGeek/scaffold-aptos-based-on-AI" color="secondary" label="Secondary">
               Github Repo
             </.button>
           </.card_footer>
@@ -205,6 +219,29 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
               <a
                 target="_blank"
                 href="https://faas.noncegeek.com"
+              >
+                <.button label="View">
+                  Launch App
+                </.button>
+              </a>
+            </.card_footer>
+          </.card>
+
+          <.card>
+            <center>
+              <.card_media src={~p"/images/logo_dorahacks.jpeg"} style="width: 50%"/>
+            </center>
+
+            <.card_content category="DAO" heading="Dorahacks Panel">
+              See the DAO Records on Dorahacks, including Grants & Bounties.
+            </.card_content>
+
+            <.card_footer>
+              <.badge color="secondary" label="aptos" />
+              <br><br>
+              <a
+                target="_blank"
+                href="/dorahacks"
               >
                 <.button label="View">
                   Launch App
