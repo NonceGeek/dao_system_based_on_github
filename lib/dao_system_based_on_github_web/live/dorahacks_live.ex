@@ -86,6 +86,9 @@ defmodule DAOSystemBasedOnGithubWeb.DorahacksLive do
       <%= for bounty <- @bounties do %>
       <.card>
             <.card_content category={bounty.category} heading={bounty.title}>
+
+            </.card_content>
+            <.card_footer>
                 <a
                     target="_blank"
                     href={"https://dorahacks.io/daobounty/#{bounty.dorahacks_id}"}
@@ -94,8 +97,6 @@ defmodule DAOSystemBasedOnGithubWeb.DorahacksLive do
                         See Bounty on Dorahacks
                     </.button>
                 </a>
-            </.card_content>
-            <.card_footer>
                 <b>Token For Bounty: </b> <%= bounty.coin_type %>
                 <br>
                 <b>Money: </b> <%= bounty.balance %>
