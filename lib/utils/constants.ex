@@ -10,4 +10,8 @@ defmodule Constants do
     def get_dorahacks_bounty_addr() do
       "0x19fc15bc00b0cd1af65aca0e08ae3c932a4be6fd48feea2f20887d6f71020318"
     end
+
+    def get_movedid_addr() do
+      "0x61b96051f553d767d7e6dfcc04b04c28d793c8af3d07d3a43b4e2f8f4ca04c9f"
+    end
   end

@@ -50,6 +50,38 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
         <div class="grid gap-5 mt-5 md:grid-cols-2 lg:grid-cols-3">
           <.card>
             <center>
+              <.card_media src={~p"/images/logo_dao_manager.png"} style="width: 50%"/>
+            </center>
+
+            <.card_content category="Profile" heading="DAO Mangager based on MoveDID">
+              Create, Buidl and Manage MoveDID-based DAO by the most lightweight way.
+            </.card_content>
+
+            <.card_footer>
+            <.badge color="secondary" label="aptos" />
+            <br><br>
+            <a
+              target="_blank"
+              href="https://manager.movedid.build/lightweight_dao_manager"
+            >
+              <.button label="View">
+                Launch App
+              </.button>
+            </a>
+            
+            <a
+              target="_blank"
+              href="/dao"
+            >
+              <.button label="View">
+                See all DAOs
+              </.button>
+            </a>
+            </.card_footer>
+          </.card>
+
+          <!--<.card>
+            <center>
               <.card_media src={~p"/images/logo_readme.png"} style="width: 50%"/>
             </center>
 
@@ -69,7 +101,7 @@ defmodule DAOSystemBasedOnGithubWeb.PageLive do
               </.button>
             </a>
             </.card_footer>
-          </.card>
+          </.card>-->
 
           <.card>
             <center>

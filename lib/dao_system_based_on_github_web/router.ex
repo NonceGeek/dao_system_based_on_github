@@ -22,6 +22,7 @@ defmodule DAOSystemBasedOnGithubWeb.Router do
     live "/data_panel", DataPanelLive, :index
     live "/github_linker", GithubLinkerLive, :index
     live "/dorahacks", DorahacksLive, :index
+    live "/dao", DAOLive, :index
 
     get "/test", PageController, :home
     live "/live/modal/:size", PageLive, :modal

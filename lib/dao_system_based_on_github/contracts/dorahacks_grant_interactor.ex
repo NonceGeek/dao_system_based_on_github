@@ -8,7 +8,7 @@ defmodule DAOSystemBasedOnGithub.Contracts.DorahacksGrantInteractor do
     alias DAOSystemBasedOnGithub.Project
 
     @contract_addr Constants.get_dorahacks_grant_addr
-    @project_list ["5858", "4334", "4340"]
+    @project_list ["5858", "4334", "4340"] # "6952"
 
     @resources %{
         data: "#{@contract_addr}::qf::Data",
