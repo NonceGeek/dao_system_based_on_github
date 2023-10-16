@@ -14,4 +14,16 @@ defmodule Constants do
     def get_movedid_addr() do
       "0x61b96051f553d767d7e6dfcc04b04c28d793c8af3d07d3a43b4e2f8f4ca04c9f"
     end
+
+    def smart_prompter_endpoint() do
+      System.get_env("SMART_PROMPTER_ENDPOINT")
+    end
+
+    def smart_prompter_acct() do
+      System.get_env("SMART_PROMPTER_ACCT")
+    end
+
+    def smart_prompter_pwd() do
+      System.get_env("SMART_PROMPTER_PWD")
+    end
   end
